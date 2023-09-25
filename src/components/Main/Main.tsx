@@ -16,7 +16,6 @@ const Main: React.FC = () => {
   const dispatch = useDispatch<AppDispatch>();
 
   useEffect(() => {
-    // if (searchedBooks.length === 0) {
     if (Number(searchedTotal) === 0) {
       dispatch(getBooksThunk());
     } else {
