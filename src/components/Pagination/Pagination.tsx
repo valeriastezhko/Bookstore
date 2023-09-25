@@ -11,6 +11,10 @@ interface PaginationProps {
 }
 
 const generatePagination = (page: number, pages: number) => {
+  if (pages === 1) {
+    return null;
+  }
+
   if (pages < 7) {
     return Array.from(Array(pages), (_, i) => i + 1);
   }
@@ -30,6 +34,9 @@ const Pagination: React.FC<PaginationProps> = ({ page, pages, onClick }) => {
   const [activePage, setActivePage] = useState(page ?? 1);
 
   const pagination = generatePagination(activePage, pages);
+  if (pages === 1) {
+    return null;
+  }
 
   const handlePageClick = (newPage: number) => {
     if (onClick) {
@@ -50,7 +57,7 @@ const Pagination: React.FC<PaginationProps> = ({ page, pages, onClick }) => {
         <p className={styles.prev}>Prev</p>
       </button>
       <div className={styles.numbersWrapper}>
-        {pagination.map((item, index) => (
+        {pagination?.map((item, index) => (
           <React.Fragment key={index}>
             {typeof item === "number" ? (
               <button
