@@ -1,0 +1,215 @@
+.cartWrapper {
+  padding-top: 70px;
+
+  @media (max-width: 580px) {
+    padding-top: 40px;
+  }
+}
+
+.cartTitle {
+  margin: 40px 0;
+}
+
+.cartBooksList {
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+
+  @media (max-width: 580px) {
+    gap: 40px;
+  }
+}
+
+.bookItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 250px;
+  padding-bottom: 70px;
+  gap: 25px;
+  border-bottom: 1px solid var(--grey-bg-color);
+
+  @media (max-width: 895px) {
+    width: 100%;
+    position: relative;
+  }
+
+  @media (max-width: 580px) {
+    flex-direction: column;
+    height: auto;
+  }
+}
+
+.linkColorWrapper {
+  display: block;
+  height: 100%;
+
+  @media (max-width: 580px) {
+    width: 100%;
+  }
+}
+
+.imageBackground {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 350px;
+
+  @media (max-width: 895px) {
+    width: 200px;
+  }
+
+  @media (max-width: 580px) {
+    width: 100%;
+  }
+}
+
+.imageBackground img {
+  height: 100%;
+}
+
+.cartItemDescription {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+  width: 30%;
+
+  @media (max-width: 895px) {
+    width: 100%;
+  }
+
+  @media (max-width: 580px) {
+    gap: 30px;
+  }
+}
+
+.cartItemTextWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  @media (max-width: 895px) {
+    flex-direction: row;
+    gap: 30px;
+    justify-content: space-between;
+  }
+}
+
+.cartItemTitle {
+  margin-bottom: 20px;
+}
+
+.cartItemPriceDesktop {
+  @media (max-width: 895px) {
+    display: none;
+  }
+}
+
+.cartItemPriceTablet {
+  display: none;
+
+  @media (max-width: 895px) {
+    display: block;
+  }
+}
+
+.closeX {
+  @media (max-width: 580px) {
+    color: var(--main-bg-color);
+  }
+}
+
+.cartResult {
+  width: 30%;
+  margin: 60px 0 70px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  @media (max-width: 900px) {
+    width: 50%;
+  }
+
+  @media (max-width: 580px) {
+    width: 100%;
+  }
+}
+
+.textWrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.priceAmountWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+.amountWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--text-secondary);
+  border-radius: 6px;
+}
+
+.btnQuant {
+  width: 33px;
+  height: 33px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.plusMinusButton {
+  background-color: transparent;
+}
+
+.quantity {
+  border-right: 1px solid var(--text-secondary);
+  border-left: 1px solid var(--text-secondary);
+}
+
+.btnCloseDesktop {
+  display: flex;
+  align-items: flex-start;
+  height: 100%;
+
+  @media (max-width: 895px) {
+    display: none;
+  }
+}
+
+.btnCloseTablet {
+  display: none;
+
+  @media (max-width: 895px) {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  @media (max-width: 580px) {
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    right: 0;
+    width: 56px;
+    height: 56px;
+    background-color: var(--text-primary);
+    color: var(--main-bg-color);
+  }
+
+  @media (max-width: 400px) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.btnClearAll {
+  width: 100%;
+}

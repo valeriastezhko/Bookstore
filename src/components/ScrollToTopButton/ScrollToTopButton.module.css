@@ -1,0 +1,28 @@
+.button {
+  position: fixed;
+  right: 32px;
+  bottom: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  opacity: 0;
+  transition: 0.3s;
+  border: 1px solid var(--text-primary);
+  border-radius: 50%;
+
+  @media (max-width: 550px) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.button img {
+  width: 80%;
+}
+
+.visible {
+  opacity: 1;
+}

@@ -1,0 +1,37 @@
+.button {
+  height: 56px;
+}
+
+.dark {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 24px;
+  line-height: 18px;
+  letter-spacing: 2px;
+  background-color: var(--text-primary);
+  border: 1px solid var(--text-primary);
+  color: var(--main-bg-color);
+}
+
+.light {
+  font-family: "Helios Antique", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  background-color: transparent;
+  border: 1px solid var(--grey-bg-color);
+  color: var(--text-primary);
+}
+
+.dark:hover {
+  background-color: var(--text-primary2);
+  border-color: var(--text-primary2);
+}
+
+.light:hover {
+  border-color: var(--text-secondary);
+}
+
+.dark:disabled {
+  background-color: var(--text-secondary);
+  border-color: var(--text-secondary);
+  cursor: default;
+}

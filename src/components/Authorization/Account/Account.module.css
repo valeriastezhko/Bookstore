@@ -1,0 +1,24 @@
+.accountWrapper {
+  padding-top: 70px;
+  @media (max-width: 500px) {
+    padding-top: 40px;
+  }
+}
+
+.profileWrapper {
+  display: flex;
+  gap: 20px;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 0;
+  }
+}
+
+.accountTitle {
+  margin: 40px 0;
+}
+
+.btnSaveChanges {
+  margin-top: 30px;
+  width: 100%;
+}

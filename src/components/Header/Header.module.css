@@ -1,0 +1,49 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  border-bottom: 1px solid var(--grey-bg-color);
+}
+
+.iconsWrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.favoritesButton {
+  position: relative;
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+.favoritesButtonImg {
+  width: 24px;
+  height: 24px;
+}
+
+.circleCart {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 7px;
+  height: 7px;
+}
+
+.cartButton {
+  position: relative;
+}
+
+.userButton {
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}

@@ -1,0 +1,82 @@
+.burgerMenu {
+  display: none;
+  position: relative;
+
+  @media (max-width: 768px) {
+    display: block;
+  }
+}
+
+.burgerButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.menuLayout {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.menuContent {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 40%;
+  padding: 0 40px;
+  background-color: var(--main-bg-color);
+  z-index: 1;
+
+  @media (max-width: 500px) {
+    width: 70%;
+    padding: 0 20px;
+  }
+}
+
+.menuHeader {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  height: 104px;
+  border-bottom: 1px solid var(--grey-bg-color);
+  margin-bottom: 40px;
+}
+
+.menuMain {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 75vh;
+}
+
+.closeButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  color: #333;
+}
+
+.btnSignIn {
+  width: 100%;
+}
+
+.linksWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.titleCart {
+  text-align: center;
+}

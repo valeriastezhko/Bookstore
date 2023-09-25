@@ -1,0 +1,116 @@
+.bookDetailWrapper {
+  padding-top: 70px;
+
+  @media (max-width: 500px) {
+    padding-top: 40px;
+  }
+}
+
+.bookDetTitle {
+  margin: 40px 0;
+}
+
+.cardsWrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
+  margin-bottom: 70px;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+
+  @media (max-width: 500px) {
+    gap: 70px;
+  }
+}
+
+.imageBackgroundColor {
+  width: 55%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+}
+
+.imageBackgroundColor img {
+  height: 100%;
+}
+
+.btnAddToFav {
+  width: 56px;
+  height: 56px;
+  background-color: #313037;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.btnAddToFav img {
+  width: 24px;
+  height: 24px;
+}
+
+.bookDetailsRigth {
+  width: 45%;
+  border-top: 1px solid var(--grey-bg-color);
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+}
+
+.wripperPriceRate {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 15px 0;
+}
+
+.wrapperСharacteristic {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+
+  @media (max-width: 500px) {
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 10px;
+  }
+}
+
+.characteristicColor {
+  @media (max-width: 768px) {
+    color: var(--text-secondary);
+  }
+}
+
+.moreDetailsButton {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 35px;
+}
+
+.btnAddToCart {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.btnPreviewBook {
+  width: 100%;
+}
+
+.tabsDescription {
+  margin: 40px 0;
+}
+
+.loading {
+  display: block;
+  margin: 30px auto;
+  width: 50px;
+}

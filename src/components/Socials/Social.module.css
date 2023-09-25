@@ -1,0 +1,17 @@
+.iconsWrapper {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+
+.iconSocial {
+  height: 24px;
+}
+
+button.hide {
+  display: none;
+}
+
+a {
+  cursor: pointer;
+}

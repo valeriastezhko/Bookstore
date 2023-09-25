@@ -1,0 +1,23 @@
+.form {
+  width: 100%;
+}
+
+.btnSubmitSignIn {
+  width: 100%;
+}
+
+.forgotPassword {
+  font-size: 14px;
+}
+
+.linkForgotPass {
+  display: block;
+  margin: 10px 0 30px;
+}
+
+.changedNote {
+  padding: 15px;
+  background-color: var(--card-bg-color-purp);
+  display: block;
+  margin: 15px 0;
+}

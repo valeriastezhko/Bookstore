@@ -1,0 +1,25 @@
+.wrapper {
+  margin-bottom: 20px;
+  border-bottom: 1px solid var(--grey-bg-color);
+}
+
+.tabs {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 10px;
+}
+
+.btnTab {
+  border: none;
+  color: var(--text-secondary);
+}
+
+.btnTab:hover {
+  color: var(--text-primary);
+}
+
+.btnTab.active {
+  border-bottom: 1px solid var(--text-primary);
+  color: var(--text-primary);
+}

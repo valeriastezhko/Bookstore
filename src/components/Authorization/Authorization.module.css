@@ -1,0 +1,31 @@
+.AuthorizationWrapper {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 150px auto;
+  padding: 30px;
+  width: 50%;
+  border: 1px solid var(--grey-bg-color);
+
+  @media (max-width: 768px) {
+    width: 70%;
+  }
+
+  @media (max-width: 550px) {
+    padding: 0;
+    width: 100%;
+    border: none;
+  }
+}
+
+.authTabs {
+  width: 100%;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 28px;
+}
+
+.authTabs > ul > li {
+  width: 50%;
+}

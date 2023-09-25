@@ -1,0 +1,20 @@
+.app {
+  background-color: var(--main-bg-color);
+  padding: 0 50px;
+  @media (max-width: 768px) {
+    padding: 0 35px;
+  }
+}
+
+.header {
+  height: 104px;
+}
+
+.footer {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 1120px;
+}

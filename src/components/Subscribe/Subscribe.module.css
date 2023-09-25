@@ -1,0 +1,45 @@
+.subscribeWrapper {
+  margin: 72px 0;
+  background-color: var(--card-bg-color-purp);
+  padding: 60px;
+  @media (max-width: 550px) {
+    padding: 25px;
+  }
+}
+.subscribeTitle {
+  margin-bottom: 20px;
+}
+
+.subscribeSubtitle {
+  margin-bottom: 20px;
+}
+
+.subscribeInputWrapper {
+  display: flex;
+  width: 100%;
+
+  @media (max-width: 500px) {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+.subscribeInput {
+  width: 100%;
+  background-color: var(--main-bg-color);
+  border: none;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 17px;
+  font-size: 16px;
+  font-family: "Helios Antique", sans-serif;
+}
+
+.subscribeBtn {
+  width: 147px;
+  height: 49px;
+
+  @media (max-width: 500px) {
+    width: 100%;
+  }
+}

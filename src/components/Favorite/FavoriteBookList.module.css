@@ -1,0 +1,123 @@
+.favoriteWrapper {
+  padding-top: 70px;
+
+  @media (max-width: 580px) {
+    padding-top: 40px;
+  }
+}
+
+.favoriteTitle {
+  margin: 40px 0;
+}
+
+.favoriteBooksList {
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+
+  @media (max-width: 580px) {
+    gap: 40px;
+  }
+}
+
+.bookItem {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 70px;
+  gap: 35px;
+  height: 250px;
+  border-bottom: 1px solid var(--grey-bg-color);
+
+  @media (max-width: 800px) {
+    width: 100%;
+  }
+
+  @media (max-width: 580px) {
+    flex-direction: column;
+    height: auto;
+    position: relative;
+  }
+}
+
+.linkColorWrapper {
+  height: 100%;
+  display: block;
+
+  @media (max-width: 580px) {
+    width: 100%;
+  }
+}
+
+.imageBackground {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 350px;
+
+  @media (max-width: 800px) {
+    width: 200px;
+  }
+
+  @media (max-width: 580px) {
+    width: 100%;
+  }
+}
+
+.imageBackground img {
+  height: 100%;
+}
+
+.textWrapper {
+  width: 45%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  @media (max-width: 580px) {
+    width: 100%;
+  }
+}
+
+.favoriteBookTitle {
+  margin-bottom: 20px;
+}
+
+.favoriteBookPriceDesktop {
+  @media (max-width: 580px) {
+    display: none;
+  }
+}
+
+.favoriteBookPriceTablet {
+  display: none;
+  @media (max-width: 580px) {
+    display: block;
+  }
+}
+
+.rateRemoveWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.btnRemoveFav {
+  @media (max-width: 580px) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: var(--text-primary);
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.ratePriceWrapper {
+  @media (max-width: 580px) {
+    display: flex;
+    justify-content: space-between;
+  }
+}

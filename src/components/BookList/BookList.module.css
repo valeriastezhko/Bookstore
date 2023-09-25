@@ -1,0 +1,69 @@
+a {
+  text-decoration: none;
+}
+.bookList {
+  display: flex;
+  flex-direction: row;
+  gap: 48px 32px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 112px;
+
+  @media (max-width: 768px) {
+    gap: 50px 40px;
+    justify-content: center;
+  }
+}
+
+.bookCard {
+  width: 30%;
+
+  @media (max-width: 860px) {
+    width: 45%;
+  }
+
+  @media (max-width: 550px) {
+    width: 100%;
+  }
+}
+
+.imageBackground {
+  height: 55%;
+  margin: 0 auto 20px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imageBackground img {
+  height: 100%;
+}
+
+.bookDescription {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  height: calc(100% - 60%);
+}
+
+.bookCardTitle {
+  height: 70px;
+}
+
+.bookCardSubtitle {
+  height: 30%;
+}
+
+.bookPriceRate {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.loading {
+  display: block;
+  margin: 30px auto;
+  width: 50px;
+}
