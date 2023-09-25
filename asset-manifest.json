@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/Bookstore/static/css/main.b8673fe1.css",
+    "main.js": "/Bookstore/static/js/main.1c0cb415.js",
+    "static/media/loading-gif.gif": "/Bookstore/static/media/loading-gif.b2a8fa3d8baba9fc720f.gif",
+    "static/media/circle.png": "/Bookstore/static/media/circle.03860997916a8a3e80fc.png",
+    "static/media/linkedIn.svg": "/Bookstore/static/media/linkedIn.6c32ad69d2a7e8c79ee116a2a152cf5e.svg",
+    "static/media/instagram.svg": "/Bookstore/static/media/instagram.d6a6364c44de1059c98a7c203dd69471.svg",
+    "static/media/youtube.svg": "/Bookstore/static/media/youtube.bdb14890d6ed391a248be70a0588f3af.svg",
+    "static/media/icon-arrow.svg": "/Bookstore/static/media/icon-arrow.f6172b48c75d405b520cf69d61916048.svg",
+    "static/media/redHeart.svg": "/Bookstore/static/media/redHeart.fe7011c126c5508643916e192e3e7b0e.svg",
+    "static/media/icon-heart.svg": "/Bookstore/static/media/icon-heart.9700d2b547d4ab5d8a0c44a3736afd0c.svg",
+    "static/media/wightHeart.svg": "/Bookstore/static/media/wightHeart.82e958b37372985dfdcd3027f15bd670.svg",
+    "static/media/icon-star.svg": "/Bookstore/static/media/icon-star.35476b81e19c9e8cfae764f569e975c5.svg",
+    "static/media/showMore.svg": "/Bookstore/static/media/showMore.7e223dbd5bba0ef4ef43f018e9f32515.svg",
+    "static/media/icon-close.svg": "/Bookstore/static/media/icon-close.e71332a5228190f7a01331ce3b9bbd61.svg",
+    "static/media/twitter.svg": "/Bookstore/static/media/twitter.d33914e082f58756d0e4c35be630972b.svg",
+    "static/media/icon-cart.svg": "/Bookstore/static/media/icon-cart.291776166f59fef865d350aaa5d72385.svg",
+    "index.html": "/Bookstore/index.html",
+    "static/media/icon-user.svg": "/Bookstore/static/media/icon-user.f95ce053779a6201d74bbfa54c39de4c.svg",
+    "static/media/icon-search.svg": "/Bookstore/static/media/icon-search.42d1889a4ff111006a825134fd645b8f.svg",
+    "static/media/icon-burger.svg": "/Bookstore/static/media/icon-burger.bfb8d9a96784d8c2f3ed6033e0c1064d.svg",
+    "static/media/facebook.svg": "/Bookstore/static/media/facebook.e6b5d31c7e942f2458bd52883692ac16.svg",
+    "static/media/up-arrow_icon.svg": "/Bookstore/static/media/up-arrow_icon.e7f740ec26c77baeb2b5395adc8506d7.svg",
+    "static/media/angleDown.svg": "/Bookstore/static/media/angleDown.1da6985f7bcd10415000d6ea0fb99813.svg",
+    "static/media/angleUp.svg": "/Bookstore/static/media/angleUp.c3cd299de44b0738ff7acd50ef32b164.svg",
+    "main.b8673fe1.css.map": "/Bookstore/static/css/main.b8673fe1.css.map",
+    "main.1c0cb415.js.map": "/Bookstore/static/js/main.1c0cb415.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b8673fe1.css",
+    "static/js/main.1c0cb415.js"
+  ]
+}
