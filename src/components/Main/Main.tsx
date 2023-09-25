@@ -41,8 +41,8 @@ const Main: React.FC = () => {
         children={pageTitle}
         className={styles.mainTitle}
       />
-      <BookList books={books} />s
-      {Number(searchedTotal) > 0 && (
+      <BookList books={books} />
+      {Number(searchedTotal) > limit && (
         <Pagination
           pages={Math.ceil(Number(searchedTotal) / limit)}
           onClick={handlePageChange}
