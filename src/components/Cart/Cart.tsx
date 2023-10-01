@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useMemo } from "react";
 import styles from "./Cart.module.css";
 import { CartBook } from "../../models/cart.model";
 import ArrowBack from "../ArrowBack/ArrowBack";
@@ -24,9 +24,6 @@ const Cart: React.FC = () => {
   const [isCheckOut, setCheckOut] = useState(false);
   const [bookToDelete, setBookToDelete] = useState<CartBook | null>(null);
   const VAT = 0.15;
-  const [backgroundColors, setBackgroundColors] = useState<
-    Record<string, string>
-  >({});
 
   const updateCartInLocalStorage = (updatedCart: CartBook[]) => {
     localStorage.setItem(`${emailSignIn}-cart`, JSON.stringify(updatedCart));
@@ -39,13 +36,15 @@ const Cart: React.FC = () => {
     setCartItems(loadedCart);
   }, [emailSignIn]);
 
-  useEffect(() => {
+  const getBackground = useMemo(() => {
     const generatedColors: Record<string, string> = {};
     cartItems.forEach((item) => {
-      generatedColors[item.bookData.isbn13] = getRandomColor();
+      if (!generatedColors[item.bookData.isbn13]) {
+        generatedColors[item.bookData.isbn13] = getRandomColor();
+      }
     });
-    setBackgroundColors(generatedColors);
-  }, [cartItems]);
+    return generatedColors;
+  }, []);
 
   useEffect(() => {
     document.title = "Cart";
@@ -78,7 +77,6 @@ const Cart: React.FC = () => {
       );
       setCartItems(updatedCart);
       setIsModalOpen(false);
-
       updateCartInLocalStorage(updatedCart);
     }
   };
@@ -124,7 +122,7 @@ const Cart: React.FC = () => {
               <div
                 className={styles.imageBackground}
                 style={{
-                  backgroundColor: backgroundColors[item.bookData.isbn13],
+                  backgroundColor: getBackground[item.bookData.isbn13],
                 }}
               >
                 <img src={item.bookData.image} alt={item.bookData.title} />
@@ -234,14 +232,14 @@ const Cart: React.FC = () => {
           </li>
         ))}
       </ul>
-
-      <Button
-        text="CLEAR ALL"
-        design="dark"
-        className={styles.btnClearAll}
-        onClick={handleClearAll}
-      />
-
+      {cartItems.length > 0 && (
+        <Button
+          text="CLEAR ALL"
+          design="dark"
+          className={styles.btnClearAll}
+          onClick={handleClearAll}
+        />
+      )}
       {isModalOpen && (
         <ConfirmationModal
           isOpen={isModalOpen}

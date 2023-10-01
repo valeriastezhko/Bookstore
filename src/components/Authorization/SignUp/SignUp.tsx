@@ -4,6 +4,8 @@ import Button from "../../Button/Button";
 import styles from "./SignUp.module.css";
 import { User } from "../../../models/user.model";
 import { isEmailValid, isPasswordValid } from "../../../utils/validation";
+import { Snackbar } from "@mui/material";
+import { useNavigate } from "react-router-dom";
 
 interface SignUpUserInfoErrors {
   username?: string;
@@ -23,6 +25,7 @@ const SignUp: React.FC = () => {
   const [values, setValues] = useState(initialValues);
   const [errors, setErrors] = useState<SignUpUserInfoErrors>({});
   const inputRef = useRef<HTMLInputElement | null>(null);
+  const [isSnackbarOpen, setIsSnackbarOpen] = useState(false);
 
   const handleChange = useCallback((e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
@@ -42,6 +45,7 @@ const SignUp: React.FC = () => {
     saveUserToLocalStorage(values);
     setValues(initialValues);
     setErrors({});
+    setIsSnackbarOpen(true);
   };
 
   const validateSignUpForm = (
@@ -136,6 +140,13 @@ const SignUp: React.FC = () => {
         onClick={handleSubmit}
         text={"Sign Up"}
         className={styles.btnSubmitSignUp}
+      />
+      <Snackbar
+        anchorOrigin={{ vertical: "bottom", horizontal: "right" }}
+        open={isSnackbarOpen}
+        autoHideDuration={3000}
+        onClose={() => setIsSnackbarOpen(false)}
+        message="Successful sign up! Sign in your account."
       />
     </form>
   );
