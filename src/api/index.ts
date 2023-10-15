@@ -4,7 +4,3 @@ import { API_URL } from "../conf";
 export const client = axios.create({
   baseURL: API_URL,
 });
-
-export const authClient = axios.create({
-  baseURL: API_URL,
-});

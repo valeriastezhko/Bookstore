@@ -16,7 +16,7 @@ export default function PositionedSnackbar() {
   });
   const { vertical, horizontal, open } = state;
 
-  const handleClick = (newState: SnackbarOrigin) => () => {
+  const createHandleClick = (newState: SnackbarOrigin) => () => {
     setState({ ...newState, open: true });
   };
 
@@ -28,7 +28,10 @@ export default function PositionedSnackbar() {
     <React.Fragment>
       <Grid item xs={6} textAlign="right">
         <Button
-          onClick={handleClick({ vertical: "bottom", horizontal: "right" })}
+          onClick={createHandleClick({
+            vertical: "bottom",
+            horizontal: "right",
+          })}
         />
       </Grid>
     </React.Fragment>
